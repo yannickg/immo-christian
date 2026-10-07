@@ -55,7 +55,8 @@ export default function App() {
         <div className="entete-ligne">
           <div>
             <h1 ref={titre} tabIndex={-1}>Simulateur immobilier</h1>
-            <div className="raison">
+            <details className="raison">
+              <summary>Pourquoi ce simulateur?</summary>
               <p>
                 L'idée de base : <strong>faire travailler ton argent à ta place</strong>. Aujourd'hui, une grosse partie de ta richesse
                 dort dans l'équité de trois immeubles plus anciens. Ils te rapportent des loyers modestes et te demandent du temps, des
@@ -84,7 +85,7 @@ export default function App() {
                 Ce simulateur vérifie si ça tient la route une fois l'impôt sur la vente, les frais et le financement pris en compte,
                 et le compare avec le fait de tout garder.
               </p>
-            </div>
+            </details>
             <p className="sous-titre">Vendre 3 immeubles pour en acheter 1 récent : est-ce que ça me permet d'arrêter de travailler?</p>
           </div>
           <div className="outils" role="toolbar" aria-label="Actions sur les données">
