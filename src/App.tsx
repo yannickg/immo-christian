@@ -55,6 +55,37 @@ export default function App() {
         <div className="entete-ligne">
           <div>
             <h1 ref={titre} tabIndex={-1}>Simulateur immobilier</h1>
+            <details className="raison">
+              <summary>Pourquoi ce simulateur?</summary>
+              <p>
+                L'idée de base : <strong>faire travailler ton argent à ta place</strong>. Aujourd'hui, une grosse partie de ta richesse
+                dort dans l'équité de trois immeubles plus anciens. Ils te rapportent des loyers modestes et te demandent du temps, des
+                réparations et beaucoup d'efforts physiques. En les vendant, tu peux utiliser cette équité comme mise de fonds sur un
+                immeuble récent de plus de logements, puis laisser les loyers payer ton épicerie.
+              </p>
+              <ul>
+                <li>
+                  <strong>Ne pas travailler jusqu'à la retraite :</strong> si le revenu net après impôt de l'immeuble couvre ton budget
+                  du mois, tu n'as plus besoin d'un salaire pour vivre. Tu choisis quand tu arrêtes.
+                </li>
+                <li>
+                  <strong>T'épargner physiquement :</strong> un immeuble récent demande beaucoup moins de rénovations et de gros
+                  travaux. Moins de toits, de fenêtres et de plomberie à refaire, et tu peux même confier la gestion à quelqu'un.
+                </li>
+                <li>
+                  <strong>Un seul immeuble, plus efficace :</strong> plus de logements sous un même toit, des loyers plus élevés et
+                  des dépenses mieux réparties par logement.
+                </li>
+                <li>
+                  <strong>Ton équité au travail :</strong> au lieu de rester immobilisée dans les murs, elle te verse un revenu chaque
+                  mois.
+                </li>
+              </ul>
+              <p>
+                Ce simulateur vérifie si ça tient la route une fois l'impôt sur la vente, les frais et le financement pris en compte,
+                et le compare avec le fait de tout garder.
+              </p>
+            </details>
             <p className="sous-titre">Vendre 3 immeubles pour en acheter 1 récent : est-ce que ça me permet d'arrêter de travailler?</p>
           </div>
           <div className="outils" role="toolbar" aria-label="Actions sur les données">
